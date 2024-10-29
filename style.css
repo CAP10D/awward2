@@ -1,0 +1,621 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+*::selection{
+    color: #fff;
+    background-color: black;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/* menu************** */
+.menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    background-color: #000;
+    z-index: 98;
+}
+
+
+/* ****nav ************ */
+#nav {
+    /* height: 100px; */
+    width: 100%;
+    /* background-color: burlywood; */
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+    z-index: 99;
+}
+
+#nav #nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#links {
+    padding: 10px;
+}
+
+#nav-part1 {
+    /* background-color: RED; */
+    height: 82px;
+    overflow: hidden;
+}
+
+#nav-part1 svg {
+    display: block;
+}
+
+#nav-part2 #links a {
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 20px;
+}
+
+
+#icons {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+}
+
+#nav-part2 #icons i {
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+    cursor: pointer;
+}
+/* cursor************ */
+.cursor{
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    background-color: rgb(99, 218, 143);
+    position: fixed;
+    transform: translate(-50%,-50%) scale(0);
+}
+/* **********page1******* */
+.page1{
+    min-height:100vh ;
+    width: 100%;
+    padding: 0 2vw;
+    padding-top: 36vh;
+    margin-bottom: 05vw;
+}
+.page1 h1{
+    font-size: 16.5vw;
+    text-transform: uppercase;
+    font-family: futura;
+    line-height: 14vw;
+    letter-spacing: -10px;
+}
+.text{
+    display: flex;
+}
+.video_container{
+    height: 120vh;
+    width: 100%;
+    background-color: gray;
+    margin-top:5vh ;
+    position: relative;
+
+}
+ .video_container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+
+} 
+.play{
+    padding: 4vw 3.4vw;
+    background-color: black;
+    color: #fff;
+    font-size: 1.3vw;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+    
+}
+/* line************ */
+.line{
+    width: 100%;
+    padding: 0 2vw;
+}
+.line .para{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.para p{
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(99, 98, 98);
+}
+.line span{
+    display: block;      
+    width: 100%;        
+    height: 1px;      
+    background-color: black;  
+    margin: 5px 0; 
+}
+/* ********page2********* */
+.page2{
+    height: 120vh;
+    width: 100%;
+    padding:2vw 2vw ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elm{
+height: 100%;
+width: 30%;
+overflow: hidden;
+position: relative;
+}
+.page2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.0;
+}
+.elm .dots{
+    position: absolute;
+    width: 80%;
+    height: 7%;
+    background-color: rgb(193, 192, 192);
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 99;
+    cursor: pointer;
+}
+.elm .dot2{
+    position: absolute;
+    width: 80%;
+    height: 40%;
+    background-color: rgb(193, 192, 192);
+    top: 48%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.1s ease;
+    padding: 10px;
+}
+.dots:hover +.dot2{
+    opacity: 1;
+
+}
+.dot2:hover {
+    opacity: 1;
+}
+.dt{
+    background-color: #000;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+}
+.dots p{
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+}
+.box1,.box2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.dot2 p{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+/* *******page4*********** */
+.page4{
+    min-width: 20vh;
+    width: 100%;
+    /* background-color: gray; */
+    padding:5vw 2vw ;
+}
+.txt{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    }
+    .rightbx h1{
+        font-family: futura;
+        font-size: 4.5vw;
+        text-transform: uppercase;
+        line-height: 10vh;
+    }
+    .leftbx p{
+    margin-bottom: 8vh;
+    width: 30vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    line-height: 4vh;
+    font-size: 1.1vw;
+    }
+/* *****page3*********** */
+.page3{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: gray; */
+    padding:5vw 2vw ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+.child{
+    height:90vh ;
+    width: 38vw;
+    margin-bottom: 20px;
+
+}
+.child img{
+    height: 90%;
+    width: 100%;
+    object-fit: cover;
+}
+.child p{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    color: rgb(133, 131, 131);
+    font-weight: 400;
+}
+/* ***********page5********** */
+.page5{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: gray; */
+    padding:0vw 2vw ;
+    overflow: hidden;
+}
+.tt{
+    display: flex;
+    justify-content: space-between;
+}
+.tt span{
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+}
+.spn span{
+    display: block;      
+    width: 100%;        
+    height: 1px;      
+    background-color: black; 
+}
+
+/* Wrapper to control overflow */
+.slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .btn {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth slide transition */
+    margin: 40px 0px;
+    gap: 20px;
+  }
+  
+  .bt {
+    height: 25vh;
+    min-width: 20%;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1.5rem;
+  }
+  .bt h3{
+    font-weight: 200;
+    font-size: 23px;
+    position: relative;
+  }
+  .bt i{
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+  }
+
+  /* ***********message********** */
+  .message {
+    width: 100%;
+    min-height: 120vh;
+    /* background-color: gray; */
+    position: relative;
+  }
+  
+  .msg {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+    /* background-color: red; */
+    color: white;
+    opacity: 1; /* Hide by default */
+    visibility: hidden; /* Prevent it from occupying space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 10vh;
+  }
+  
+  .msg.active {
+    opacity: 1; /* Show when active */
+    visibility: visible; /* Make it visible */
+    transform: translateY(0); /* Slide to the original position */
+  }
+  .msg .line{
+    font-size: 05.5vw;
+    font-family: futura;
+    text-transform: uppercase;
+    color: #000;
+    overflow: hidden;
+  }
+  /* ***********send message */
+  .sendmsg{
+    width: 100%;
+    height: 75vh;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    
+  }
+  .fisbx{
+    width: 28%;
+    height: 10vh;
+    background-color: #000;
+    border-radius: 30px;
+    position: relative;
+    opacity: 0;
+    z-index: 10;
+    
+  }
+  .mg{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    color: white;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+  .mg .name{
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    
+  }
+  .mg input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    outline: none; 
+    caret-color: #fff;
+ }
+ .mg input::placeholder{
+    color: rgba(159, 158, 158, 0.5);
+ }
+  .mg .mst{
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 140px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 12.1px;
+  }
+  .mg .pt{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12.5;
+    font-weight: 200;
+    color: gray;
+    width: 300px;
+
+  }
+  .btt{
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    bottom: 0%;
+    background-color: #222222;
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fisbx button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    font-size: 1.1vw;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .secbx{
+    width: 28%;
+    height: 10vh;
+    background-color: black;
+    position: absolute;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    z-index: 99;
+  }
+  .secbx button{
+    border: none;
+    background-color: transparent;
+    font-size: 1.1vw;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .sendmsg .para{
+    position: absolute;
+    top:23%;
+    width: 19.5vw;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 1;
+    z-index: 99;
+  }
+  /* ********page6********8 */
+  .page6{
+    height: 107vh;
+    width: 100%;
+    padding:4vw 2vw ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sqr{
+    height: 100%;
+    width: 32%;
+    overflow: hidden;
+    position: relative;
+    }
+.page6 img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        scale: 1.2;
+    }
+#sqr1{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-right: 70px;
+}
+#sqr1 p{
+    font: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#sqr1 h1{
+    font-family: futura;
+    font-size: 1.5rem;
+}
+#sqr1 button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: "ABC Social Mono", "Lucida Sans", Tahoma, nonospaced;
+}
+/* ***************page7************ */
+.page7{
+    height: 135vh;
+    width: 100%;
+    padding:2vw 2vw ;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20vh;
+}
+.footer1 {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+
+.footer1 input{
+    font-size: 05.5vw;
+    font-family: futura;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+}
+.footer1 i{
+    font-size: 40px;
+    font-weight: 200;
+}
+ .lg{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.lg a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+.lg svg{
+    width: 250px;
+    height: 250px;
+    padding-left: 50px;
+    scale: 1.5;
+    opacity: 0;
+    rotate: 50deg;
+}
+.rec2 .cpy{
+    width: 100%;
+    display: flex;
+    color: rgb(72, 72, 72);
+    justify-content: space-evenly;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    gap: 20px;
+    font-size: 12px;
+    margin-top: 3rem;
+}
+.rec1,.rec3{
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.rec3{
+    text-align: end;
+}
+.ftcontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
